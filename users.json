@@ -1,0 +1,258 @@
+[
+    {
+        "lastname": "Ziemann",
+        "firstname": "Rick",
+        "username": "Marilou.Ferry",
+        "email": "Tevin88@yahoo.com",
+        "password": "dolo",
+        "group": "user",
+        "active": false,
+        "gpsCoordinates": {
+            "lat": -15.21131910935415,
+            "long": -109.29343434927536
+        },
+        "creationDate": "2021-11-09T23:55:30.168Z",
+        "validationDate": "2021-08-11T14:14:15.809Z",
+        "telephone": "748-358-7114"
+    },
+    {
+        "lastname": "Hilpert",
+        "firstname": "Janis",
+        "username": "Dewitt.Nienow47",
+        "email": "Brannon_Bergstrom@yahoo.com",
+        "password": "incididunt",
+        "group": "user",
+        "active": true,
+        "gpsCoordinates": {
+            "lat": 45.86666551678533,
+            "long": 1.3325971742238494
+        },
+        "creationDate": "2021-09-20T03:31:45.965Z",
+        "validationDate": "2021-08-27T15:37:36.613Z",
+        "telephone": "318-623-4232"
+    },
+    {
+        "lastname": "Tremblay",
+        "firstname": "Janis",
+        "username": "Marquise_Barrows",
+        "email": "Cydney55@yahoo.com",
+        "password": "labore e",
+        "group": "user",
+        "active": false,
+        "gpsCoordinates": {
+            "lat": -69.14441033834899,
+            "long": -15.934023857866407
+        },
+        "creationDate": "2021-07-18T05:22:59.660Z",
+        "validationDate": "2021-05-16T02:02:26.502Z",
+        "telephone": "913-486-1709"
+    },
+    {
+        "lastname": "Quitzon",
+        "firstname": "Cody",
+        "username": "Antonia.Hilpert19",
+        "email": "Dora53@hotmail.com",
+        "password": "nu",
+        "group": "user",
+        "active": false,
+        "gpsCoordinates": {
+            "lat": 67.3809597002184,
+            "long": 66.14884926262809
+        },
+        "creationDate": "2021-12-03T07:30:14.429Z",
+        "validationDate": "2021-08-03T23:20:22.298Z",
+        "telephone": "202-545-2966"
+    },
+    {
+        "lastname": "Mohr",
+        "firstname": "Rose",
+        "username": "Meaghan.Bosco",
+        "email": "Gerhard2@yahoo.com",
+        "password": "enim co",
+        "group": "user",
+        "active": true,
+        "gpsCoordinates": {
+            "lat": -50.12625577923528,
+            "long": 165.38593008218191
+        },
+        "creationDate": "2021-08-15T00:21:33.580Z",
+        "validationDate": "2021-11-17T01:23:13.016Z",
+        "telephone": "824-953-6517"
+    },
+    {
+        "lastname": "Dare",
+        "firstname": "Noah",
+        "username": "Mauricio_Daniel69",
+        "email": "Dariana.Turcotte@yahoo.com",
+        "password": "pariat",
+        "group": "user",
+        "active": true,
+        "gpsCoordinates": {
+            "lat": -9.728655294171432,
+            "long": 84.736405539528
+        },
+        "creationDate": "2021-12-07T22:44:05.469Z",
+        "validationDate": "2021-01-24T02:26:55.612Z",
+        "telephone": "934-258-2752"
+    },
+    {
+        "lastname": "Dicki",
+        "firstname": "Lena",
+        "username": "Efrain_Morissette11",
+        "email": "Tiara77@hotmail.com",
+        "password": "Lorem t",
+        "group": "user",
+        "active": true,
+        "gpsCoordinates": {
+            "lat": -66.13515972287802,
+            "long": -113.79513531905253
+        },
+        "creationDate": "2022-01-04T07:29:33.957Z",
+        "validationDate": "2021-02-08T07:23:49.205Z",
+        "telephone": "370-973-9440"
+    },
+    {
+        "lastname": "Hermann",
+        "firstname": "Alberta",
+        "username": "Aniyah_Weissnat",
+        "email": "Cora60@hotmail.com",
+        "password": "aute p",
+        "group": "user",
+        "active": false,
+        "gpsCoordinates": {
+            "lat": 28.702574146147526,
+            "long": -150.8809112486915
+        },
+        "creationDate": "2021-12-29T00:30:17.150Z",
+        "validationDate": "2021-06-23T15:17:40.314Z",
+        "telephone": "142-343-7856"
+    },
+    {
+        "lastname": "Graham",
+        "firstname": "Courtney",
+        "username": "Maddison_Bartoletti",
+        "email": "Dillon.Ebert25@gmail.com",
+        "password": "ex et nos",
+        "group": "user",
+        "active": true,
+        "gpsCoordinates": {
+            "lat": -33.360225124174384,
+            "long": 166.79631137470363
+        },
+        "creationDate": "2021-11-22T05:22:59.829Z",
+        "validationDate": "2021-10-27T10:54:38.244Z",
+        "telephone": "339-513-4208"
+    },
+    {
+        "lastname": "Nikolaus",
+        "firstname": "Ernesto",
+        "username": "Deanna_Jacobs",
+        "email": "Abraham.Padberg45@hotmail.com",
+        "password": "non ut",
+        "group": "user",
+        "active": true,
+        "gpsCoordinates": {
+            "lat": -6.8074777284481485,
+            "long": 40.82933361716559
+        },
+        "creationDate": "2021-09-29T03:38:22.303Z",
+        "validationDate": "2021-04-19T07:09:52.671Z",
+        "telephone": "787-189-5887"
+    },
+    {
+        "lastname": "Corwin",
+        "firstname": "Dale",
+        "username": "Liana.Mann48",
+        "email": "Royal.Lehner@gmail.com",
+        "password": "veniam al",
+        "group": "user",
+        "active": true,
+        "gpsCoordinates": {
+            "lat": -30.43082394780602,
+            "long": 101.47568599808557
+        },
+        "creationDate": "2021-07-06T13:26:37.121Z",
+        "validationDate": "2021-07-30T20:18:16.806Z",
+        "telephone": "363-771-5793"
+    },
+    {
+        "lastname": "Rogahn",
+        "firstname": "Juan",
+        "username": "Reece_Rowe96",
+        "email": "Adella_Carter84@hotmail.com",
+        "password": "m",
+        "group": "user",
+        "active": false,
+        "gpsCoordinates": {
+            "lat": -34.820817942701666,
+            "long": 154.88187385592852
+        },
+        "creationDate": "2021-11-13T05:03:43.488Z",
+        "validationDate": "2021-10-05T00:36:59.308Z",
+        "telephone": "604-921-8187"
+    },
+    {
+        "lastname": "Block",
+        "firstname": "Darryl",
+        "username": "Kristofer.Weimann54",
+        "email": "Oral.OConnell@yahoo.com",
+        "password": "cillum dol",
+        "group": "user",
+        "active": false,
+        "gpsCoordinates": {
+            "lat": -63.429450245657584,
+            "long": 92.24076137482155
+        },
+        "creationDate": "2021-08-17T05:55:49.524Z",
+        "validationDate": "2021-07-26T16:25:07.584Z",
+        "telephone": "470-823-5096"
+    },
+    {
+        "lastname": "Lang",
+        "firstname": "Homer",
+        "username": "Ofelia_Rau",
+        "email": "Juwan_Fadel22@yahoo.com",
+        "password": "tempo",
+        "group": "user",
+        "active": true,
+        "gpsCoordinates": {
+            "lat": -46.333813218694125,
+            "long": -38.65460083337737
+        },
+        "creationDate": "2021-08-12T14:50:02.863Z",
+        "validationDate": "2021-11-14T18:44:05.676Z",
+        "telephone": "445-980-9541"
+    },
+    {
+        "lastname": "Connelly",
+        "firstname": "Domingo",
+        "username": "Blair_Beahan30",
+        "email": "Jack_Rodriguez@hotmail.com",
+        "password": "fugiat",
+        "group": "user",
+        "active": false,
+        "gpsCoordinates": {
+            "lat": 11.976703462290018,
+            "long": -30.944185194905344
+        },
+        "creationDate": "2021-08-08T22:36:27.323Z",
+        "validationDate": "2021-01-30T23:07:51.981Z",
+        "telephone": "240-891-9397"
+    },
+    {
+        "lastname": "Schowalter",
+        "firstname": "Pat",
+        "username": "Andy.Yost48",
+        "email": "Duncan_Hayes@hotmail.com",
+        "password": "except",
+        "group": "user",
+        "active": false,
+        "gpsCoordinates": {
+            "lat": -30.561388842871352,
+            "long": -14.591537625017367
+        },
+        "creationDate": "2021-02-08T15:48:23.382Z",
+        "validationDate": "2021-02-26T12:03:31.514Z",
+        "telephone": "518-014-8545"
+    }
+]
