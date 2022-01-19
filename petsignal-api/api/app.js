@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const app = express();
 
 app.use(express.json());
@@ -14,16 +15,16 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
   );
-  res.setHeader("Access-Control-Allow-Methods", "GET,POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   next();
 });
 /**ROUTES */
-// app.use("/api", require("./routes/signals"));
-// app.use("/api", require("./routes/users"));
+app.use("/api", require("./routes/signals"));
+app.use("/api", require("./routes/users"));
 
 /**Route to test if API is online */
 
-app.get("/", (req, res, next) => {
+app.get("/api", (req, res, next) => {
   res.send("<h1>HELLO WORLD!</h1>");
   console.log("HELLO");
 });
