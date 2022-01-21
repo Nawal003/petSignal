@@ -130,13 +130,31 @@ router.put("/signal/:id", (req, res, next) => {
   }
   console.log("req.body======>", req.body.classified);
   let paths;
-  if (req.body.photo) paths = req.body.photo;
+  if (req.body.classified.photo) paths = req.body.classified.photo;
 
-  const classified = req.body;
-  Signal.find({ _id: req.params.id })
-    .then(() => {
+  let classified;
+  Signal.findById({ _id: req.params.id })
+    .then((signal) => {
       //fonctionne
-      console.log("signal===>", req.body.classified);
+      console.log(
+        "signal===>",
+        // (signal.classified = req.body.classified),
+        // (signal = req.body.classified),
+        // (classified = signal.classified),
+        (signal.classified = {
+          comment: req.body.classified.comment,
+          photo: paths,
+        })
+      );
+      signal._id = { _id: req.params.id };
+      signal.classified = {
+        comment: req.body.classified.comment,
+        photo: paths,
+        gpsCoordinates: req.body.classified.gpsCoordinates,
+        userId: req.body.classified.userId,
+        username: req.body.classified.username,
+      };
+      return signal.save();
     })
     .catch((err) => {
       return res.status(400).json({
@@ -146,7 +164,7 @@ router.put("/signal/:id", (req, res, next) => {
     .then((result) => {
       res.status(200).json({
         message: "Signal successfully updated!",
-        signalUpdated: result,
+        signalUpdated: result._id,
       });
     })
     .catch((error) => {
