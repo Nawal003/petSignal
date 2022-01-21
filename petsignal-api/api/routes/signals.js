@@ -4,7 +4,7 @@ const Signal = require("../models/signal");
 
 /**GET ALL SIGNALS REPORTS */
 
-router.get("/signals/:startDate?/:endDate?", (req, res, next) => {
+router.get("/signals/", (req, res, next) => {
   Signal.find().then((data) => {
     res.status(200).json({
       message: "Signals reports fetched successfully!",
@@ -38,7 +38,7 @@ router.get("/signalsbyuser/:idUser", (req, res, next) => {
 /**GET GPSCOORDINATES BY SIGNAL'S ID */
 //À régler plus tard
 
-router.get("/signal/gpsCoordinates/:id", (req, res, next) => {
+router.get("/signal/:id/gpsCoordinates", (req, res, next) => {
   if (req.params.id == null || undefined) {
     return res.status(404).json({
       message: "Invalid Coordinates",
@@ -128,16 +128,15 @@ router.put("/signal/:id", (req, res, next) => {
       message: "Invalid ID",
     });
   }
+  console.log("req.body======>", req.body.classified);
   let paths;
   if (req.body.photo) paths = req.body.photo;
 
-  Signal.findById({ _id: req.params.id })
-    .then((signal) => {
-      signal.classified = {
-        photo: paths,
-        comment: req.body.comment,
-      };
-      return signal.save();
+  const classified = req.body;
+  Signal.find({ _id: req.params.id })
+    .then(() => {
+      //fonctionne
+      console.log("signal===>", req.body.classified);
     })
     .catch((err) => {
       return res.status(400).json({
@@ -147,7 +146,7 @@ router.put("/signal/:id", (req, res, next) => {
     .then((result) => {
       res.status(200).json({
         message: "Signal successfully updated!",
-        signalUpdated: result._id,
+        signalUpdated: result,
       });
     })
     .catch((error) => {

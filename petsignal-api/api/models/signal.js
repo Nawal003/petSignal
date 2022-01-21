@@ -21,7 +21,7 @@ const signalSchema = new mongoose.Schema({
     age: { type: Date, default: Date.now() },
     gender: { type: String, default: "Genre inconnu" },
     chip: { type: Boolean, default: false },
-    identificationNumber: { type: Number },
+    identificationNumber: { type: String, required: false },
     gpsCoordinates: {
       lat: { type: Number, required: true },
       long: { type: Number, required: true },
@@ -29,19 +29,19 @@ const signalSchema = new mongoose.Schema({
     description: { type: String, required: false },
   },
   classified: {
-    creationDate: { type: Date, required: false, default: Date.now() },
-    userId: { type: String, required: false },
-    username: { type: String, required: false },
+    creationDate: { type: Date, required: false, default: Date },
+    userId: { type: String, required: true },
+    username: { type: String, required: true },
     gpsCoordinates: {
-      lat: { type: Number, required: false },
-      long: { type: Number, required: false },
+      lat: { type: Number, required: true },
+      long: { type: Number, required: true },
     },
     photo: {
       type: String,
-      required: false,
+      required: true,
       default: "../public/uploads/default_photo.png",
     },
-    comment: { type: String, required: false },
+    comment: { type: String, required: true },
   },
 });
 
