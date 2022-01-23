@@ -38,7 +38,7 @@ router.get("/user/:id", (req, res, next) => {
 
 /**CREATE A NEW USER */
 
-router.post("/users", async (req, res, next) => {
+router.post("/user", async (req, res, next) => {
   const checkUser = await User.find({ email: req.body.emain }).exec();
   if (checkUser.length > 0) {
     return res.status(403).json({

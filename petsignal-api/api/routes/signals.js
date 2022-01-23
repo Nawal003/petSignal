@@ -128,31 +128,31 @@ router.put("/signal/:id", (req, res, next) => {
       message: "Invalid ID",
     });
   }
-  console.log("req.body======>", req.body.classified);
+  // console.log("req.body======>", req.body.classified);
   let paths;
-  if (req.body.classified.photo) paths = req.body.classified.photo;
+  if (req.body.photo) paths = req.body.photo;
 
   let classified;
   Signal.findById({ _id: req.params.id })
     .then((signal) => {
       //fonctionne
       console.log(
-        "signal===>",
+        "signal===>"
         // (signal.classified = req.body.classified),
         // (signal = req.body.classified),
         // (classified = signal.classified),
-        (signal.classified = {
-          comment: req.body.classified.comment,
-          photo: paths,
-        })
+        // (signal.classified = {
+        //   comment: req.body.classified.comment,
+        //   photo: paths,
+        // })
       );
       signal._id = { _id: req.params.id };
       signal.classified = {
-        comment: req.body.classified.comment,
+        comment: req.body.comment,
         photo: paths,
-        gpsCoordinates: req.body.classified.gpsCoordinates,
-        userId: req.body.classified.userId,
-        username: req.body.classified.username,
+        gpsCoordinates: req.body.gpsCoordinates,
+        userId: req.body.userId,
+        username: req.body.username,
       };
       return signal.save();
     })
@@ -164,7 +164,7 @@ router.put("/signal/:id", (req, res, next) => {
     .then((result) => {
       res.status(200).json({
         message: "Signal successfully updated!",
-        signalUpdated: result._id,
+        signalUpdated: result,
       });
     })
     .catch((error) => {
